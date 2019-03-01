@@ -11,70 +11,85 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Malý programátor</title>
+
+    <style>
+        .jumbotron {
+            background-color: rgb(30, 83, 180);
+            color:rgb(255, 255, 255);
+        }
+        /* Adds borders for tabs */
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div class="container">
-        <h1> Malý programátor </h1>
 
-        <h2> Otázky a odpovědi </h2>
-            <h5> Mám problém, nevím jak něco udělat </h5>
-                <p>
-                - správný programátor se nejprve zkusí zamyslet sám
-                - dobrým pomocníkem mu může být i sám počítač - často stačí trochu pohledat, či vyhledat na internetu
-                </p>
-            <h5> Zkusil jsem to a stále nevím nebo potřebuji pomoct s něčím co jsem ještě nedělal </h5>
-                <p>
-                - zvedni ruku a chvíli počkej, budu k vám chodit popořadě :)
-                </p>
-            <h5> Zajímá mě jak něco funguje, objevil jsem něco nového a chci se na to zeptat </h5>
-                <p>
-                - opět ruka hore, a já to rád vysvětlím :)
-                </p>
-            <h5> Nevím co dělat </h5>
-                <p>
-                - podívej se na odkazy níže nebo se podívej co zrovna dělají ostatní, třeba tě něco napadne, jinak se klidně přihlaš a já ti poradím 
-                - není problém na něčem pracovat i např ve dvojici a vyzkoušet si týmovou spolupráci
-                </p>
+<div class="container">
 
-        <h2> Na čem mohu dělat </h2>
-            <a href="https://scratch.mit.edu/starter_projects/"> Scratch </a>
-                <p>
-                - úvodní stránka se vzorovými jednoduchými hrami na kterých se dá učit co a jak
-                </p>
+<div class="pb-2 mt-4 mb-2 border-bottom">
+<h1> Malý programátor </h1>
+</div>
 
-            <a href="https://www.webnode.cz/prihlaseni/"> Webnode </a>
-                <p>
-                - přihlaš se a já přijdu a přihlásím tě
-                - pokud budeš chtít přidat odkaz na svou hru ve Scratchi tak ti také pomůžu
-                </p>
+<div class="jumbotron">
+    <h2> Otázky a odpovědi </h2>
 
-            <a href="https://makecode.microbit.org/#"> Microbit </a>
-                <p>
-                - pokud není v češtině tak úplně dole je tlačítko Language se zeměkoulí kde se to dá změnit
-                - pro začátek doporučuju si zkusit udělat např měnící se obrázek na led diodách
-                </p>
+    <p>
+        <h5> Mám problém / nevím jak něco udělat </h5>
+        <li> správný programátor se nejprve zkusí zamyslet sám </li>
+        <li> dobrým pomocníkem mu může být i sám počítač - často stačí trochu pohledat, či vyhledat na internetu </li>
+    </p><p>
+        <h5> Zkusil jsem to a stále nevím nebo potřebuji pomoct s něčím co jsem ještě nedělal </h5>
+        <li> zvedni ruku a chvíli počkej, budu k vám chodit popořadě :) </li>
+    </p><p>
+        <h5> Zajímá mě jak něco funguje / objevil jsem něco nového a chci se na to zeptat </h5>
+        <li> opět ruka hore, a já to rád vysvětlím :) </li>
+    </p><p>
+        <h5> Nevím co dělat </h5>
+        <li> podívej se na odkazy níže nebo se podívej co zrovna dělají ostatní, třeba tě něco napadne, jinak se klidně přihlaš a já ti poradím </li>
+        <li> není problém na něčem pracovat i např ve dvojici a vyzkoušet si týmovou spolupráci </li>
+    </p>
 
-            <a href="https://hourofcode.com/cz/learn"> Code org a další </a>
-                <p>
-                - lekce na code.org plus další obdobné stránky k prozkoumání
-                </p>
+    <h2> Na čem mohu dělat </h2>
+    <p>
+        <button type="button" class="btn btn-light" href="https://makecode.microbit.org/#"> Microbit </button>
+        <li> jako Scratch, jde o vytváření programů pro </li>
+        <li> pokud není v češtině tak úplně dole je tlačítko Language se zeměkoulí kde se to dá změnit </li>
+        <li> pro začátek doporučuju si zkusit udělat např měnící se obrázek na led diodách </li>
+    </p><p>
+        <button type="button" class="btn btn-light" href="https://scratch.mit.edu/starter_projects/"> Scratch </button>
+        <li> úvodní stránka se vzorovými jednoduchými hrami na kterých se dá učit co a jak </li>
+    </p><p>
+        <button type="button" class="btn btn-light" href="https://www.webnode.cz/prihlaseni/"> Webnode </button>
+        <li> přihlaš se a já přijdu a přihlásím tě </li>
+        <li> pokud budeš chtít přidat odkaz na svou hru ve Scratchi tak ti také pomůžu </li>
+    </p><p>
+        <button type="button" class="btn btn-light" href="https://hourofcode.com/cz/learn"> Code org a další </button>
+        <li> lekce na code.org plus další obdobné stránky k prozkoumání </li>
+    </p><p>
+        <button type="button" class="btn btn-light" href="https://www.piskelapp.com/p/create"> Piskelapp </button>
+        <li> vytváření pixelových obrázků např ke Scratchi, avšak drž se pravdila - v jednoduchosti je síla </li>
+    </p><p>
+        Kodu Gamelab
+        <li> měl by být nainstalovaný na počítači, zkus najít jeho ikonku </li>
+    </p>
 
-            <a href="https://www.piskelapp.com/p/create"> Piskelapp </a>
-                <p>
-                - vytváření pixelových obrázků např ke Scratchi, avšak drž se pravdila - v jednoduchosti je síla
-                </p>
-            <h5> Kodu Gamelab </h5>
-                <p>
-                - měl by být nainstalovaný na počítači
-                </p>
+    <h2> Více </h2>
+    <p>
+        Budu sem postpně přidávat odkazy a návody. 
+        Kdyby tě zajímalo jak vypadá kód této stránky, klinki pravým tlačítkem a zvol zobrazit zdrojový kód stránky :)
+    </p>
+</div>
 
-        <h2> Více </h2>
-            <p>
-            Budu sem postpně přidávat odkazy a návody. 
-            Kdyby tě zajímalo jak vypadá kód této stránky, klinki pravým tlačítkem a zvol zobrazit zdrojový kód stránky :)
-            </p>
-    </div>
+</div>
 
 
 
@@ -84,17 +99,17 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
